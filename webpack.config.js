@@ -19,8 +19,8 @@ const baseConfig = {
                 use: ['style-loader', 'css-loader'],
             },
             {
-                test: /\.svg/,
-                type: 'asset/inline',
+                test: /\.(png|jpg|jpeg|svg|gif)$/,
+                type: 'asset/resource',
             },
         ],
     },
