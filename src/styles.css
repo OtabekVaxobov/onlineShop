@@ -1,46 +1,263 @@
-body {
-    color: #fff;
-    font-family: sans-serif;
-    background-color: #333;
+*,
+::before,
+::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-header {
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+img {
+    vertical-align: top;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+html,
+body {
+    font-family: 'Georgia';
+    scroll-behavior: smooth;
+}
+
+main {
+    position: relative;
+}
+
+._main-container {
+    overflow: hidden;
+    padding: 0 40px;
+}
+
+._container {
+    overflow: hidden;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: burlywood;
+}
+
+._btn {
+    width: 160px;
+    min-height: 35px;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    font-family: 'Georgia';
+    padding: 5px;
+    border-radius: 100px;
+    background-color: #f1cdb3;
+    transition: all 0.5s ease 0s;
+    color: black;
+    cursor: pointer;
+}
+
+._active-btn {
+    background-color: green;
+}
+
+._btn:hover {
+    background-color: wheat;
+}
+
+._active-btn:hover {
+    background-color: green;
+}
+
+._btn:active {
+    background-color: black;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    max-height: 150px;
+}
+
+.list-item {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    padding: 15px;
+    border: solid 3px black;
+}
+
+.item-btn {
+    margin-top: 10px;
+    align-self: center;
+}
+
+.item-photo {
+    width: 100%;
+}
+
+.basket {
+    display: flex;
+    margin: 50px 0 50px auto;
+    max-width: 300px;
+}
+
+.basket-count {
+    align-self: center;
+}
+
+.basket-img {
+    max-width: 100px;
+}
+
+.addBasket {
+    background-color: orange;
+}
+
+.input-area {
+    width: 300px;
+    padding: 10px 20px;
+}
+
+.itemHide {
+    display: none;
+}
+
+.tumbler {
+    padding: 10px;
+    gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.brd {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: solid 1px black;
+}
+
+.tumbler-filter-block {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.tumbler-range-wrapper {
+    padding: 0 30px;
+    min-width: 400px;
+}
+
+.tumbler-range {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tumbler-range-label {
+    padding: 5px;
+}
+
+.tumbler-range-input {
+    padding: 5px 10px;
+}
+
+.slider-wrapper {
     padding: 10px 30px;
 }
 
-header h1 {
-    font-size: 40px;
-    font-weight: 800;
+#slider {
+    border-radius: 25px;
 }
 
-footer {
-    height: 100px;
+#slider-2 {
+    border-radius: 25px;
+}
+
+.noUi-handle {
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 50% !important;
+}
+
+.noUi-handle::after,
+.noUi-handle::before {
+    display: none !important;
+}
+
+.footer {
     display: flex;
+    padding: 15px 15%;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
-}
-footer .copyright {
-    font-size: 14px;
-    color: #333;
-    text-align: center;
-}
-footer .copyright a {
-    color: #444;
-}
-footer .copyright a:hover {
-    color: #555;
-}
-footer .copyright:before {
-    content: '©';
-}
-.github {
-    background: url('../src/images/github.svg') no-repeat;
-    width: 30px;
-    height: 30px;
 }
 
-.rs-school {
-    background: url('../src/images/rs_school_js.svg') no-repeat;
-    width: 30px;
-    height: 30px;
+.footer__item {
+    width: 100px;
+    height: 100px;
+    color: #fff;
+}
+
+.footer__item img {
+    width: 70px;
+    height: 70px;
+    color: #fff;
+}
+
+.footer__link {
+    display: block;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.footer__link:hover {
+    cursor: pointer;
+}
+
+.footer__github {
+    width: 40px;
+    background-repeat: no-repeat;
+    filter: invert(100%);
+}
+
+.footer__rsschool {
+    width: 100px;
+    background-repeat: no-repeat;
 }
