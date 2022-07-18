@@ -55,7 +55,7 @@ main {
     overflow: hidden;
     max-width: 1400px;
     margin: 0 auto;
-    background-color: burlywood;
+    background-color: rgb(135, 197, 222);
 }
 
 ._btn {
