@@ -4,19 +4,153 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Online Store</title>
+        <title>Online-Store</title>
     </head>
     <body>
         <header>
-            <h1>Online Shop</h1>
+            <div class="page-header _main-container">
+                <section class="header _container">
+                    <div class="search-form">
+                        <form class="input-form">
+                            <input
+                                class="input-area"
+                                type="search"
+                                name="q"
+                                placeholder="Поиск по наименованию"
+                                autofocus
+                                autocomplete="off"
+                            />
+                        </form>
+                    </div>
+                    <div class="basket">
+                        <img class="basket-img" src="./img/korzina-1.png" />
+                        <div class="basket-count">Количество:<span class="basket-count-span">0</span></div>
+                    </div>
+                </section>
+            </div>
         </header>
         <main>
-            <div class="main"></div>
+            <div class="page-tumbler _main-container">
+                <section class="tumbler _container">
+                    <div class="brd tumbler-sort">
+                        <p class="tumbler-sort-text">Сортировка</p>
+                        <button class="_btn abc-sort">От А до Я</button>
+                        <button class="_btn year-sort">По году</button>
+                    </div>
+                    <div class="brd tumbler-filter-value">
+                        <p class="tumbler-filter-value">Фильтры по значению</p>
+                        <div class="tumbler-filter-block tumbler-filter-type">
+                            <p>Тип:</p>
+                            <button class="_btn filter-type filter-type-cat">Кот</button>
+                            <button class="_btn filter-type filter-type-dog">Собака</button>
+                        </div>
+                        <div class="tumbler-filter-block tumbler-filter-country">
+                            <p>Страна завоза:</p>
+                            <button class="_btn filter-country filter-country-russia">Россия</button>
+                            <button class="_btn filter-country filter-country-england">Англия</button>
+                            <button class="_btn filter-country filter-country-germany">Германия</button>
+                        </div>
+                        <div class="tumbler-filter-block tumbler-filter-diff">
+                            <p>Сложность содержания:</p>
+                            <button class="_btn filter-diff filter-diff-easy">Легко</button>
+                            <button class="_btn filter-diff filter-diff-normal">Средне</button>
+                            <button class="_btn filter-diff filter-diff-hard">Сложно</button>
+                        </div>
+                        <div class="tumbler-filter-block tumbler-filter-diff">
+                            <p>Популярные животные:</p>
+                            <button class="_btn filter-popular"></button>
+                        </div>
+                        <div class="tumbler-filter-block tumbler-filter-diff">
+                            <p>Сбросить все фильттры:</p>
+                            <button class="_btn filter-dell"></button>
+                        </div>
+                    </div>
+                    <div class="brd tumbler-range-wrapper">
+                        <p class="tumbler-range-text">Фильтры в диапазоне</p>
+                        <div class="one-filter">
+                            <p class="tumbler-range-text">Год выведения породы:</p>
+                            <div class="slider-wrapper">
+                                <div id="slider"></div>
+                            </div>
+                            <div class="tumbler-range">
+                                <label class="tumbler-range-label">
+                                    <span>От:</span>
+                                    <input
+                                        type="number"
+                                        min="1600"
+                                        max="2022"
+                                        placeholder="1600"
+                                        class="tumbler-range-input"
+                                        id="input-0"
+                                    />
+                                </label>
+                                <label class="tumbler-range-label">
+                                    <span>До:</span>
+                                    <input
+                                        type="number"
+                                        min="1600"
+                                        max="2022"
+                                        placeholder="2022"
+                                        class="tumbler-range-input"
+                                        id="input-1"
+                                    />
+                                </label>
+                            </div>
+                        </div>
+                        <div class="two-filter">
+                            <p class="tumbler-range-text">Животных в наличии:</p>
+                            <div class="slider-wrapper">
+                                <div id="slider1"></div>
+                            </div>
+                            <div class="tumbler-range">
+                                <label class="tumbler-range-label">
+                                    <span>От:</span>
+                                    <input
+                                        type="number"
+                                        min="1"
+                                        max="50"
+                                        placeholder="1"
+                                        class="tumbler-range-input"
+                                        id="input-2"
+                                    />
+                                </label>
+                                <label class="tumbler-range-label">
+                                    <span>До:</span>
+                                    <input
+                                        type="number"
+                                        min="1"
+                                        max="50"
+                                        placeholder="50"
+                                        class="tumbler-range-input"
+                                        id="input-3"
+                                    />
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="page-preview _main-container">
+                <section class="preview _container">
+                    <div class="list-item"></div>
+                </section>
+            </div>
         </main>
-        <footer>
-            <a class="footer__item rs-school" href="https://rs.school/js/"></a>
-            <a class="footer__item github" href="https://github.com/OtabekVaxobov"></a>
+        <footer class="page-footer">
+            <div class="footer _container">
+                <div class="footer__item">
+                    <a href="https://github.com/OtabekVaxobov" class="footer__link footer__github"
+                        ><img src="./img/github.svg"
+                    /></a>
+                </div>
+                <p class="footer__item">2022 JiK©</p>
+                <div class="footer__item">
+                    <a href="https://rs.school/js-stage0/" class="footer__link footer__rsschool"
+                        ><img src="./img/rss.svg"
+                    /></a>
+                </div>
+            </div>
         </footer>
-        <script src="./index.ts"></script>
     </body>
 </html>
